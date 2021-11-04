@@ -29,9 +29,8 @@ public class MatrixEntry{
      */
     public void draw(Canvas canvas)
     {
+        //canvas.drawRect();
         canvas.drawRect(square, paint);
-        //button.setX(square.centerX());
-        //button.setY(square.centerY());
     }
 
     public Rect getSquare() {
@@ -50,11 +49,12 @@ public class MatrixEntry{
      * this method is useful to be able to show the possible moves a piece can
      * take by altering matrix entry colors.
      *
-     * @param paint Represents colour of matrix entry as an integer value.
+     *
      */
-    public void setPaint(Paint paint)
+    public void setPaint(int color)
     {
-        this.paint = paint;
-
+        paint.setColor(color);
     }
+
+
 }
